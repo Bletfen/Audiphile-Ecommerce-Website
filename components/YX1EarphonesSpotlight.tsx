@@ -1,18 +1,24 @@
 import Link from "next/link";
-import Image from "next/image";
 
 export default function YX1EarphonesSpotlight() {
   return (
-    <div className="flex flex-col gap-[2.4rem]">
+    <div
+      className="flex flex-col gap-[2.4rem]
+        md:flex-row md:gap-[1.1rem]
+        transition-all duration-300"
+    >
       <div
         className="bg-[url('/assets/home/desktop/image-earphones-yx1.jpg')]
-      w-[32.7rem] h-[20rem]
-      bg-no-repeat bg-cover rounded-[0.8rem]"
+        w-[32.7rem] h-[20rem]
+        bg-no-repeat bg-cover rounded-[0.8rem]
+        md:w-[35rem] md:h-[32rem]
+        md:bg-[url('/assets/home/tablet/image-earphones-yx1.jpg')]
+        "
       ></div>
       <div
         className="flex flex-col bg-[#f1f1f1]
         rounded-[0.8rem] px-[2.4rem] h-[20rem]
-        justify-center
+        justify-center md:px-[4.1rem] md:h-[32rem]
         "
       >
         <h2

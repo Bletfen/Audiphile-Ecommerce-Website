@@ -19,7 +19,7 @@ export default function Header() {
         >
           <div
             className="md:flex items-center
-        gap-[4.2rem]"
+        gap-[4.2rem] transition-all duration-300"
           >
             <svg width="16" height="15" xmlns="http://www.w3.org/2000/svg">
               <g fill="#FFF" fillRule="evenodd">
@@ -27,7 +27,7 @@ export default function Header() {
               </g>
             </svg>
             <svg
-              className="hidden md:flex"
+              className="hidden md:flex transition-all duration-300"
               width="143"
               height="25"
               xmlns="http://www.w3.org/2000/svg"

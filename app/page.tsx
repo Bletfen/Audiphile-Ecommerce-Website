@@ -12,22 +12,22 @@ export default function Home() {
       <header>
         <Header />
       </header>
-      <main>
+      <main className="md:pt-[5rem]">
         <Category />
         <section
           className="px-[2.4rem] mt-[12rem]
         flex flex-col items-center
-        gap-[2.4rem]"
+        gap-[2.4rem] md:mt-[9.6rem]"
         >
           <ZX9SpeakerSpotlight />
           <ZX7SpeakerSpotlight />
           <YX1EarphonesSpotlight />
         </section>
-        <section className="mt-[12rem] flex flex-col items-center">
+        <section className="mt-[12rem] flex flex-col items-center md:mt-[9.6rem]">
           <HomeInfo />
         </section>
       </main>
-      <footer className="mt-[12rem]">
+      <footer className="mt-[12rem] md:mt-[9.6rem]">
         <Footer />
       </footer>
     </>

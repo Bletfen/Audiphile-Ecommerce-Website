@@ -27,14 +27,17 @@ export default function Category() {
   return (
     <section
       className="px-[2.4rem] flex
-    flex-col items-center"
+    flex-col items-center md:flex-row
+    transition-all duration-300
+    md:gap-[1rem] md:justify-center"
     >
       {listOfCategories.map((item, i) => (
         <div key={i}>
           <div
             className="flex flex-col items-center
-            relative mt-[9.2rem]
-            w-[32.7rem] h-[16.5rem]"
+            relative mt-[9.2rem] transition-all duration-300
+            w-[32.7rem] h-[16.5rem]
+            md:w-[22.3rem] md:h-[16.5rem]"
           >
             <Image
               src={item.images[0].desktop}

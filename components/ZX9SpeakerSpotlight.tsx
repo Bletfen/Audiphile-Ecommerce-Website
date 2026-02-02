@@ -9,7 +9,12 @@ export default function ZX9SpeakerSpotlight() {
     bg-[url('/assets/home/desktop/pattern-circles.svg')]
     bg-no-repeat bg-[length:560px_560px]
     bg-[position:right_-117px_top_-120px]
-    w-[32.7rem]"
+    w-[32.7rem] md:w-[68.9rem]
+    transition-all duration-300
+    md:pt-[5.2rem] md:pb-[6.4rem]
+    md:bg-[length:800px_800px]
+    md:bg-[position:right_-57px_top_-250px]
+    "
     >
       <Image
         src="/assets/home/desktop/image-speaker-zx9.png"
@@ -24,13 +29,14 @@ export default function ZX9SpeakerSpotlight() {
       >
         <h2
           className="text-[3.6rem] font-bold
-        tracking-[1.29px] leading-[1.11] mt-[3.2rem]"
+        tracking-[1.29px] leading-[1.11] mt-[3.2rem]
+        md:text-[5.6rem] md:leading-[1.04]"
         >
           ZX9 <br /> SPEAKER
         </h2>
         <p
           className="text-[1.5rem] font-[500] opacity-75
-            leading-[1.67]"
+            leading-[1.67] max-w-[35rem]"
         >
           Upgrade to premium speakers that are phenomenally built to deliver
           truly remarkable sound.
