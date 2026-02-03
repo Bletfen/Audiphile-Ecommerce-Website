@@ -25,11 +25,22 @@ export default async function page({
       <header
         className="py-[3.2rem] px-[8.4rem]
         bg-[#000] w-full text-white
-        flex justify-center items-center"
+        flex justify-center items-center
+        md:py-[0] md:pt-[10.5rem] md:pb-[9.7rem]
+        lg:py-[9.8rem]"
       >
-        <h1>{category.toUpperCase()}</h1>
+        <h1
+          className="text-[2.8rem] font-bold
+          tracking-[0.2rem] md:text-[4rem]
+          md:tracking-[1.43px] md:leading-[1.1]"
+        >
+          {category.toUpperCase()}
+        </h1>
       </header>
-      <main className="px-[2.4rem] mt-[6.4rem]">
+      <main
+        className="px-[2.4rem] mt-[6.4rem]
+        md:px-[3.9rem] md:mt-[12rem]"
+      >
         <HeadphoneInfo data={firstIsNewer} />
       </main>
       <section className="mt-[12rem]">
