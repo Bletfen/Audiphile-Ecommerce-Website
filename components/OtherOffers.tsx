@@ -14,15 +14,16 @@ export default function OtherOffers({
   return (
     <div
       className="flex flex-col items-center
-        gap-[4rem]"
+        gap-[4rem] md:px-[3.9rem]"
     >
       <h3
         className="text-[2.4rem] font-bold leading-[1.5]
-            tracking-[0.86px] text-[#000] mt-[8.8rem]"
+            tracking-[0.86px] text-[#000] mt-[8.8rem]
+            md:text-[3.2rem] md:leading-[1.13] md:tracking-[1.14px]"
       >
         YOU MAY ALSO LIKE
       </h3>
-      <div>
+      <div className="md:flex md:gap-[1.1rem]">
         {otherItems.map((item) => (
           <div
             key={item.slug}
@@ -36,7 +37,14 @@ export default function OtherOffers({
               width={327}
               height={120}
               alt={item.name}
-              className="rounded-[0.8rem]"
+              className="rounded-[0.8rem] md:hidden "
+            />
+            <Image
+              src={item.image.tablet}
+              width={327}
+              height={120}
+              alt={item.name}
+              className="rounded-[0.8rem] md:block hidden"
             />
             <h4
               className="

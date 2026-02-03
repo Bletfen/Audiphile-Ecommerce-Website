@@ -14,7 +14,8 @@ export default async function page({
       <Link
         href={`/${itemInfo?.category}`}
         className="text-[1.5rem] text-[#000] opacity-50
-        leading-[1.67] font-[500] px-[2.4rem]"
+        leading-[1.67] font-[500] px-[2.4rem]
+        md:px-[3.9rem]"
       >
         Go Back
       </Link>
