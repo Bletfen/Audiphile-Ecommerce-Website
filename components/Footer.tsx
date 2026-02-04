@@ -1,5 +1,12 @@
+import Link from "next/link";
+
 export default function Footer() {
-  const linkArray = ["HOME", "HEADPHONES", "SPEAKERS", "EARPHONES"];
+  const linkArray = [
+    { name: "Home", href: "/" },
+    { name: "Headphones", href: "/headphones" },
+    { name: "Speakers", href: "/speakers" },
+    { name: "Earphones", href: "/earphones" },
+  ];
   return (
     <div
       className="text-white
@@ -37,13 +44,14 @@ export default function Footer() {
         md:mb-[3.2rem]"
         >
           {linkArray.map((link) => (
-            <span
-              key={link}
+            <Link
+              href={link.href}
+              key={link.name}
               className="text-[1.3rem] leading-[1.92] tracking-[0.2rem]
-            font-bold"
+              font-bold"
             >
-              {link}
-            </span>
+              {link.name.toUpperCase()}
+            </Link>
           ))}
         </div>
       </div>

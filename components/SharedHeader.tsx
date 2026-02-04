@@ -1,6 +1,8 @@
 "use client";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { useEffect, useState } from "react";
+import Category from "./Category";
 
 const linkArray = [
   { name: "Home", href: "/" },
@@ -12,12 +14,27 @@ const linkArray = [
 export default function SharedHeader() {
   const pathname = usePathname();
   const isHome = pathname === "/";
+  const [isOpen, setIsOpen] = useState<boolean>(false);
+
+  useEffect(() => {
+    document.body.style.overflow = isOpen ? "hidden" : "auto";
+    const handleResize = () => {
+      if (window.innerWidth >= 1440) {
+        setIsOpen(false);
+      }
+    };
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, [isOpen]);
+
   return (
     <>
       <header
         className={`
             pt-[3.2rem] md:pt-[0]
-        md:px-[3.9rem]
+        md:px-[3.9rem] ${isOpen ? "" : ""}
         xl:px-[0] ${isHome ? "bg-[#191919]" : "bg-[#000]"}`}
       >
         <div
@@ -39,6 +56,7 @@ export default function SharedHeader() {
               width="16"
               height="15"
               xmlns="http://www.w3.org/2000/svg"
+              onClick={() => setIsOpen((prev) => !prev)}
             >
               <g fill="#FFF" fillRule="evenodd">
                 <path d="M0 0h16v3H0zM0 6h16v3H0zM0 12h16v3H0z" />
@@ -90,6 +108,15 @@ export default function SharedHeader() {
           </svg>
         </div>
         <div className="h-px w-full bg-[#4C4C4C] max-w-[1110px] mx-auto" />
+        {isOpen && (
+          <div
+            onClick={() => setIsOpen(false)}
+            className="fixed inset-x-0 bottom-0 lg:hidden
+              top-[10.8rem] md:top-[9rem] z-50 bg-black/50 min-h-screen"
+          >
+            <Category type="menu" />
+          </div>
+        )}
       </header>
     </>
   );

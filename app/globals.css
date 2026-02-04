@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+/* @theme {
+  --breakpoint-lg: 1440px;
+} */
+
 html {
   font-size: 62.5%;
 }

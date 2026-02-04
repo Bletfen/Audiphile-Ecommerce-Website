@@ -23,14 +23,15 @@ const listOfCategories = [
   },
 ];
 
-export default function Category() {
+export default function Category({ type }: { type?: string }) {
   return (
     <section
-      className="px-[2.4rem] flex
-    flex-col items-center md:flex-row
-    transition-all duration-300
-    md:gap-[1rem] md:justify-center
-    lg:gap-[3rem]"
+      className={`px-[2.4rem] flex
+      flex-col items-center md:flex-row
+      transition-all duration-300
+      md:gap-[1rem] md:justify-center
+      lg:gap-[3rem]
+      ${type === "menu" ? "w-full absolute left-1/2 -translate-x-1/2 w-[calc(100%-4.8rem)] max-w-[1110px] bg-white z-50 pb-[3.5rem] md:pb-[6.5rem] rounded-b-[0.8rem] justify-between" : ""}`}
     >
       {listOfCategories.map((item, i) => (
         <div key={i}>

@@ -14,16 +14,21 @@ export default function OtherOffers({
   return (
     <div
       className="flex flex-col items-center
-        gap-[4rem] md:px-[3.9rem]"
+        gap-[4rem] md:px-[3.9rem]
+        lg:gap-[6.4rem] lg:px-[0]"
     >
       <h3
         className="text-[2.4rem] font-bold leading-[1.5]
             tracking-[0.86px] text-[#000] mt-[8.8rem]
-            md:text-[3.2rem] md:leading-[1.13] md:tracking-[1.14px]"
+            md:text-[3.2rem] md:leading-[1.13] md:tracking-[1.14px]
+            lg:mt-[0]"
       >
         YOU MAY ALSO LIKE
       </h3>
-      <div className="md:flex md:gap-[1.1rem]">
+      <div
+        className="md:flex md:gap-[1.1rem]
+        lg:gap-[3rem]"
+      >
         {otherItems.map((item) => (
           <div
             key={item.slug}
@@ -44,7 +49,14 @@ export default function OtherOffers({
               width={327}
               height={120}
               alt={item.name}
-              className="rounded-[0.8rem] md:block hidden"
+              className="rounded-[0.8rem] md:block hidden lg:hidden"
+            />
+            <Image
+              src={item.image.desktop}
+              width={350}
+              height={318}
+              alt={item.name}
+              className="rounded-[0.8rem] hidden lg:block"
             />
             <h4
               className="
