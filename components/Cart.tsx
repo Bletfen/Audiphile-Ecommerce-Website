@@ -41,12 +41,6 @@ export default function Cart() {
             <p className="text-[1.5rem] font-[500] text-[#000] opacity-50">
               Your cart is empty
             </p>
-            <span
-              className="mt-[1.2rem] text-[1.3rem] font-bold
-                tracking-[0.1rem] text-[#d87d4a]"
-            >
-              START SHOPPING
-            </span>
           </div>
         ) : (
           <div className="mt-[3.2rem]">

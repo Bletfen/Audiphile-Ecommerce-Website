@@ -1,5 +1,5 @@
 import useCartStore from "@/store/cartStore";
-import type { ChangeEvent } from "react";
+import { type ChangeEvent } from "react";
 
 export default function QuantityMangaer({
   itemQuantity,
@@ -57,7 +57,7 @@ export default function QuantityMangaer({
           type="button"
           onClick={handleDecrement}
           aria-label="Decrease quantity"
-          className="p-1"
+          className="p-1 cursor-pointer"
         >
           <svg
             width="4"
@@ -86,7 +86,7 @@ export default function QuantityMangaer({
           type="button"
           onClick={handleIncrement}
           aria-label="Increase quantity"
-          className="p-1"
+          className="p-1 cursor-pointer"
         >
           <svg
             width="6"

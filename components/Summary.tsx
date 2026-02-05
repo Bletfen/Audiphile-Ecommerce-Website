@@ -1,8 +1,18 @@
 import useCartStore from "@/store/cartStore";
 import Image from "next/image";
 import { getDisplayName } from "@/namemodifier/nameModifier";
+import ThankYou from "./ThankYou";
+import { useEffect } from "react";
 
-export default function Summary({ onSubmit }: { onSubmit: () => void }) {
+export default function Summary({
+  onSubmit,
+  showThankYou,
+  setShowThankYou,
+}: {
+  onSubmit: () => void;
+  showThankYou: boolean;
+  setShowThankYou: React.Dispatch<React.SetStateAction<boolean>>;
+}) {
   const { items } = useCartStore();
   const total = items
     .map(({ product, quantity }) => product.price * quantity)
@@ -18,6 +28,10 @@ export default function Summary({ onSubmit }: { onSubmit: () => void }) {
     { label: "VAT(included)", value: vat },
     { label: "GRAND TOTAL", value: grandTotal },
   ];
+
+  useEffect(() => {
+    document.body.style.overflow = showThankYou ? "hidden" : "auto";
+  }, [showThankYou]);
 
   return (
     <div
@@ -93,11 +107,19 @@ export default function Summary({ onSubmit }: { onSubmit: () => void }) {
       <button
         className="py-[1.5rem] text-center w-full
         bg-[#d87d4a] text-white font-bold text-[1.3rem]
-        tracking-[0.1rem]"
+        tracking-[0.1rem] cursor-pointer"
         onClick={onSubmit}
       >
         CONTINUE & PAY
       </button>
+      {showThankYou && (
+        <div
+          className="fixed inset-x-0 bottom-0 top-[10.6rem]
+            md:top-0 z-50 bg-black/50 min-h-screen"
+        >
+          <ThankYou />
+        </div>
+      )}
     </div>
   );
 }

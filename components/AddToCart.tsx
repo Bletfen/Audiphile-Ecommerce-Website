@@ -6,10 +6,14 @@ import AddedToCartToast from "./AddedToCartToast";
 import QuantityManager from "./QuantityManager";
 
 export default function AddToCart({ item }: { item: TProduct }) {
-  const { quantity, addItem, items } = useCartStore();
+  const { quantity, addItem, items, setQuantity } = useCartStore();
   const [showToast, setShowToast] = useState(false);
   const [toastMessage, setToastMessage] = useState("PRODUCT ADDED TO CART");
   const hideTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+
+  useEffect(() => {
+    setQuantity(1);
+  }, [item.slug, setQuantity]);
 
   useEffect(() => {
     return () => {

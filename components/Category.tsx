@@ -73,32 +73,31 @@ export default function Category({ type }: { type?: string }) {
               >
                 {item.category.toUpperCase()}
               </h2>
-              <div
-                className="flex items-center
-                gap-[1.3rem] justify-center"
-              >
+              <div className="cursor-pointer">
                 <Link
                   href={"/" + item.category}
                   className="text-[1.3rem] font-bold
                     tracking-[0.1rem] text-[#000] opacity-50
+                    flex items-center
+                    gap-[1.3rem] justify-center
                     "
                 >
                   SHOP
+                  <svg
+                    width="8"
+                    height="12"
+                    viewBox="0 0 8 12"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      id="Path 2"
+                      d="M0.707031 0.707031L5.70703 5.70703L0.707031 10.707"
+                      stroke="#D87D4A"
+                      strokeWidth="2"
+                    />
+                  </svg>
                 </Link>
-                <svg
-                  width="8"
-                  height="12"
-                  viewBox="0 0 8 12"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    id="Path 2"
-                    d="M0.707031 0.707031L5.70703 5.70703L0.707031 10.707"
-                    stroke="#D87D4A"
-                    strokeWidth="2"
-                  />
-                </svg>
               </div>
             </div>
           </div>

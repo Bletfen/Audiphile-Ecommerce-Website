@@ -28,6 +28,7 @@ export default function CheckoutForm() {
   const [eMoneyNumberError, setEMoneyNumberError] = useState<string>("");
   const [eMoneyPin, setEMoneyPin] = useState<string>("");
   const [eMoneyPinError, setEMoneyPinError] = useState<string>("");
+  const [showThankYou, setShowThankYou] = useState<boolean>(false);
 
   const getFieldState = (title: string) => {
     switch (title) {
@@ -198,6 +199,7 @@ export default function CheckoutForm() {
     ) {
       return;
     }
+    setShowThankYou(true);
   };
 
   return (
@@ -501,7 +503,11 @@ export default function CheckoutForm() {
         </form>
       </div>
       <div>
-        <Summary onSubmit={handleSubmit} />
+        <Summary
+          onSubmit={handleSubmit}
+          showThankYou={showThankYou}
+          setShowThankYou={setShowThankYou}
+        />
       </div>
     </div>
   );
