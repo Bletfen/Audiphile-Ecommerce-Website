@@ -11,14 +11,14 @@ export default function CategoryInfo({ data }: { data: TProduct[] }) {
       {data.map((item, index) => (
         <div
           key={item.id}
-          className={`lg:flex
+          className={`xl:flex
             items-center gap-[12.5rem]
             `}
         >
           <div
             className={`flex flex-col
               items-center
-              ${(index + 1) % 2 === 0 && "lg:order-2"}`}
+              ${(index + 1) % 2 === 0 && "xl:order-2"}`}
           >
             <Image
               src={item.image.mobile}
@@ -28,7 +28,7 @@ export default function CategoryInfo({ data }: { data: TProduct[] }) {
               className="flex md:hidden rounded-[0.8rem]"
             />
             <div
-              className="hidden md:flex lg:hidden rounded-[0.8rem]
+              className="hidden md:flex xl:hidden rounded-[0.8rem]
               w-[689px] h-[352px] bg-[#f1f1f1]
               flex items-center justify-center"
             >
@@ -37,7 +37,7 @@ export default function CategoryInfo({ data }: { data: TProduct[] }) {
                 alt={item.name}
                 width={220}
                 height={243}
-                className="hidden md:flex lg:hidden rounded-[0.8rem]"
+                className="hidden md:flex xl:hidden rounded-[0.8rem]"
               />
             </div>
             <Image
@@ -45,7 +45,7 @@ export default function CategoryInfo({ data }: { data: TProduct[] }) {
               alt={item.name}
               width={540}
               height={560}
-              className="hidden lg:flex rounded-[0.8rem]"
+              className="hidden xl:flex rounded-[0.8rem]"
             />
           </div>
           <div
@@ -53,7 +53,7 @@ export default function CategoryInfo({ data }: { data: TProduct[] }) {
               items-center text-center
               gap-[2.4rem] mt-[3.2rem]
               md:gap-[0] md:mt-[5.2rem]
-              lg:mt-[0] lg:items-start lg:text-start"
+              xl:mt-[0] xl:items-start xl:text-start"
           >
             {item.new && (
               <span
@@ -78,7 +78,7 @@ export default function CategoryInfo({ data }: { data: TProduct[] }) {
               className="text-[1.5rem] font-[500]
                 leading-[1.67] text-[#000] opacity-50
                 md:mb-[2.4rem] max-w-[57.2rem]
-                lg:max-w-[44.5rem]
+                xl:max-w-[44.5rem]
                 "
             >
               {item.description}

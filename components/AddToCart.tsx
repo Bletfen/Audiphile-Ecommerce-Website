@@ -46,7 +46,7 @@ export default function AddToCart({ item }: { item: TProduct }) {
   return (
     <div
       className="relative flex items-center gap-[1.6rem]
-        mt-[3.1rem] lg:mt-[4.7rem]"
+        mt-[3.1rem] xl:mt-[4.7rem]"
     >
       <AddedToCartToast show={showToast} message={toastMessage} />
       <QuantityManager />

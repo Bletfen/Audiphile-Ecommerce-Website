@@ -21,8 +21,8 @@ export default function ProductInfo({ data }: { data: TProduct | undefined }) {
       <div
         className="px-[2.4rem] md:px-[3.9rem]
         md:flex md:items-center md:gap-[6.9rem]
-        lg:w-[111rem] mx-auto lg:gap-[12.5rem]
-        lg:px-[0]"
+        xl:w-[111rem] mx-auto xl:gap-[12.5rem]
+        xl:px-[0]"
       >
         <Image
           src={data.image.mobile}
@@ -36,14 +36,14 @@ export default function ProductInfo({ data }: { data: TProduct | undefined }) {
           alt={data.name}
           width={281}
           height={480}
-          className="hidden rounded-[0.8rem] md:block lg:hidden"
+          className="hidden rounded-[0.8rem] md:block xl:hidden"
         />
         <Image
           src={data.image.desktop}
           alt={data.name}
           width={540}
           height={560}
-          className="hidden rounded-[0.8rem] hidden lg:block"
+          className="hidden rounded-[0.8rem] hidden xl:block"
         />
         <div
           className="flex flex-col mt-[3.2rem]
@@ -54,8 +54,8 @@ export default function ProductInfo({ data }: { data: TProduct | undefined }) {
               className="text-[1.4rem] tracking-[1rem]
                 text-[#d87d4a] mb-[2.4rem]
                 md:mb-[1.7rem] md:text-[1.2rem]
-                md:tracking-[8.57px] lg:tracking-[1rem]
-                lg:mb-[1.6rem]"
+                md:tracking-[8.57px] xl:tracking-[1rem]
+                xl:mb-[1.6rem]"
             >
               NEW PRODUCT
             </span>
@@ -64,8 +64,8 @@ export default function ProductInfo({ data }: { data: TProduct | undefined }) {
             className="mb-[2.4rem] text-[2.8rem]
             font-bold tracking-[0.1rem] text-[#000]
             md:mb-[3.2rem] md:leading-[1.14]
-            lg:text-[4rem] lg:tracking-[1.43px]
-            lg:leading-[1.1] lg:mb-[3.2rem]"
+            xl:text-[4rem] xl:tracking-[1.43px]
+            xl:leading-[1.1] xl:mb-[3.2rem]"
           >
             {data.name.toUpperCase()}
           </h2>
@@ -85,19 +85,19 @@ export default function ProductInfo({ data }: { data: TProduct | undefined }) {
         </div>
       </div>
       <section
-        className="lg:flex lg:w-[111rem]
-        lg:justify-between lg:mx-auto
-        lg:mt-[16rem] gap-[12.5rem]"
+        className="xl:flex xl:w-[111rem]
+        xl:justify-between xl:mx-auto
+        xl:mt-[16rem] gap-[12.5rem]"
       >
         <section
           className="flex flex-col gap-[2.4rem]
-            px-[2.4rem] md:px-[3.9rem] lg:px-[0]"
+            px-[2.4rem] md:px-[3.9rem] xl:px-[0]"
         >
           <h3
             className="text-[2.4rem] font-bold leading-[1.5]
             tracking-[0.86px] text-[#000] mt-[8.8rem]
             md:text-[3.2rem] md:leading-[1.13] md:tracking-[1.14px]
-            lg:mt-[0]"
+            xl:mt-[0]"
           >
             FEATURES
           </h3>
@@ -112,9 +112,9 @@ export default function ProductInfo({ data }: { data: TProduct | undefined }) {
           className="self-start
         px-[2.4rem] md:px-[0] md:pl-[3.9rem]
         md:flex md:justify-between md:w-[54.9rem]
-        md:mt-[12rem] lg:shrink-0
-        lg:flex-col lg:w-[35rem] lg:gap-[3.2rem]
-        lg:mt-[0]"
+        md:mt-[12rem] xl:shrink-0
+        xl:flex-col xl:w-[35rem] xl:gap-[3.2rem]
+        xl:mt-[0]"
         >
           <h3
             className="text-[2.4rem] font-bold leading-[1.5]
@@ -148,12 +148,12 @@ export default function ProductInfo({ data }: { data: TProduct | undefined }) {
           </ul>
         </section>
       </section>
-      <section className="mt-[8.8rem] lg:mt-[16rem]">
+      <section className="mt-[8.8rem] xl:mt-[16rem]">
         <ProductImages images={data.gallery} />
       </section>
       <section
         className="flex items-center justify-center
-        mt-[12rem] lg:mt-[16rem]"
+        mt-[12rem] xl:mt-[16rem]"
       >
         <OtherOffers otherItems={data.others} />
       </section>

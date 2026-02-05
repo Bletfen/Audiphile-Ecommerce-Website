@@ -11,8 +11,8 @@ export default function ZX7SpeakerSpotlight() {
     bg-contain
     md:w-[68.9rem] transition-all duration-300
     md:bg-[url('/assets/home/tablet/image-speaker-zx7.jpg')]
-    md:pl-[6.2rem] lg:pl-[9.5rem] lg:w-[111rem]
-    lg:bg-[url('/assets/home/desktop/image-speaker-zx7.jpg')]"
+    md:pl-[6.2rem] xl:pl-[9.5rem] xl:w-[111rem]
+    xl:bg-[url('/assets/home/desktop/image-speaker-zx7.jpg')]"
     >
       <h2
         className="text-[2.8rem] font-bold

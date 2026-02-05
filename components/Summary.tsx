@@ -36,7 +36,7 @@ export default function Summary({
   return (
     <div
       className="bg-white p-[2.4rem] rounded-[0.8rem]
-        mb-[9.7rem] lg:w-[35rem] md:p-[3.2rem]"
+        mb-[9.7rem] xl:w-[35rem] md:p-[3.2rem]"
     >
       <h2
         className="text-[1.8rem] font-bold text-[#000]

@@ -9,22 +9,22 @@ export default function ZX9SpeakerSpotlight() {
     bg-[url('/assets/home/desktop/pattern-circles.svg')]
     bg-no-repeat bg-[length:560px_560px]
     bg-[position:right_-117px_top_-120px]
-    w-[32.7rem] md:w-[68.9rem] lg:w-[111rem]
+    w-[32.7rem] md:w-[68.9rem] xl:w-[111rem]
     transition-all duration-300
-    md:pt-[5.2rem] md:pb-[6.4rem] lg:pt-[9.6rem] lg:pb-[0]
+    md:pt-[5.2rem] md:pb-[6.4rem] xl:pt-[9.6rem] xl:pb-[0]
     md:bg-[length:800px_800px]
     md:bg-[position:right_-57px_top_-250px]
-    lg:flex-row lg:overflow-hidden
-    lg:gap-[13.8rem]
-    lg:bg-[length:1000px_1000px]
-    lg:bg-[position:right_300px_top_-70px]
+    xl:flex-row xl:overflow-hidden
+    xl:gap-[13.8rem]
+    xl:bg-[length:1000px_1000px]
+    xl:bg-[position:right_300px_top_-70px]
     "
     >
       <Image
         className="w-[17.2rem] h-[20.7rem] 
           md:w-[19.7rem] md:h-[23.7rem]
-          lg:w-[41rem] lg:h-[46.4rem]
-          lg:relative lg:top-[0.7rem]"
+          xl:w-[41rem] xl:h-[46.4rem]
+          xl:relative xl:top-[0.7rem]"
         src="/assets/home/desktop/image-speaker-zx9.png"
         alt="ZX9 Speaker"
         width={410}
@@ -34,21 +34,21 @@ export default function ZX9SpeakerSpotlight() {
         className="text-white
         flex flex-col items-center
         text-center gap-[2.4rem]
-        lg:items-start lg:text-start lg:ml-[0]
-        lg:self-start"
+        xl:items-start xl:text-start xl:ml-[0]
+        xl:self-start"
       >
         <h2
           className="text-[3.6rem] font-bold
         tracking-[1.29px] leading-[1.11] mt-[3.2rem]
         md:text-[5.6rem] md:leading-[1.04]
-        lg:mt-[1.5rem]"
+        xl:mt-[1.5rem]"
         >
           ZX9 <br /> SPEAKER
         </h2>
         <p
           className="text-[1.5rem] font-[500] opacity-75
             leading-[1.67] max-w-[35rem]
-            lg:mb-[4rem]"
+            xl:mb-[4rem]"
         >
           Upgrade to premium speakers that are phenomenally built to deliver
           truly remarkable sound.

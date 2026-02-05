@@ -6,7 +6,7 @@ export default function YX1EarphonesSpotlight() {
       className="flex flex-col gap-[2.4rem]
         md:flex-row md:gap-[1.1rem]
         transition-all duration-300
-        lg:gap-[3rem]"
+        xl:gap-[3rem]"
     >
       <div
         className="bg-[url('/assets/home/desktop/image-earphones-yx1.jpg')]
@@ -14,15 +14,15 @@ export default function YX1EarphonesSpotlight() {
         bg-no-repeat bg-cover rounded-[0.8rem]
         md:w-[35rem] md:h-[32rem]
         md:bg-[url('/assets/home/tablet/image-earphones-yx1.jpg')]
-        lg:w-[54rem] lg:h-[32rem]
-        lg:bg-[url('/assets/home/desktop/image-earphones-yx1.jpg')]
+        xl:w-[54rem] xl:h-[32rem]
+        xl:bg-[url('/assets/home/desktop/image-earphones-yx1.jpg')]
         "
       ></div>
       <div
         className="flex flex-col bg-[#f1f1f1]
         rounded-[0.8rem] px-[2.4rem] h-[20rem]
         justify-center md:px-[4.1rem] md:h-[32rem]
-        lg:px-[9.5rem] lg:h-[32rem] lg:w-[54rem]
+        xl:px-[9.5rem] xl:h-[32rem] xl:w-[54rem]
         "
       >
         <h2

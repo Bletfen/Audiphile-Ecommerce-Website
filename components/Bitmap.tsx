@@ -12,17 +12,17 @@ export default function Bitmap() {
       flex flex-col items-center
       md:bg-[position:0%_100%]
       transition-all duration-300
-      lg:items-start
-      lg:bg-[url('/assets/home/desktop/image-hero.jpg')]
-      lg:bg-cover
-      lg:pt-[12.8rem] lg:pb-[15.8rem]
-      lg:rounded-b-[0.8rem]
+      xl:items-start
+      xl:bg-[url('/assets/home/desktop/image-hero.jpg')]
+      xl:bg-cover
+      xl:pt-[12.8rem] xl:pb-[15.8rem]
+      xl:rounded-b-[0.8rem]
       "
     >
       <div
         className="
-        lg:flex lg:items-start lg:flex-col
-        lg:w-[111rem] lg:mx-auto lg:text-start
+        xl:flex xl:items-start xl:flex-col
+        xl:w-[111rem] xl:mx-auto xl:text-start
         "
       >
         <span
@@ -55,7 +55,7 @@ export default function Bitmap() {
           className="px-[3rem] py-[1.5rem] bg-[#d87d4a]
           text-white text-[1.3rem] font-bold
           mt-[3.2rem] inline-block
-          lg:mt-[4rem] cursor-pointer
+          xl:mt-[4rem] cursor-pointer
           hover:bg-[#fbaf85]
           transition-colors duration-300
         "

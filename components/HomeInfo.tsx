@@ -3,7 +3,8 @@ export default function HomeInfo() {
   return (
     <div
       className="
-      lg:flex max-w-[111rem] gap-[12.5rem] mx-auto"
+      xl:flex max-w-[111rem] gap-[12.5rem] mx-auto
+      "
     >
       <Image
         src={
@@ -24,11 +25,11 @@ export default function HomeInfo() {
         alt="XX99 Mark Two Headphones"
         className="rounded-[0.8rem] mb-[4rem]
         hidden md:flex transition-all duration-300
-        lg:hidden
+        xl:hidden
         "
       />
       <div
-        className="hidden lg:flex w-[54rem] h-[58.8rem] relative
+        className="hidden xl:flex w-[54rem] h-[58.8rem] relative
         order-2"
       >
         <Image
@@ -43,8 +44,8 @@ export default function HomeInfo() {
       <div
         className="flex flex-col text-center items-center
         justify-center w-[32.7rem] mx-auto
-        gap-[3.2rem] md:w-[57.3rem] lg:w-[44.5rem]
-        lg:items-start lg:text-start"
+        gap-[3.2rem] md:w-[57.3rem] xl:w-[44.5rem]
+        xl:items-start xl:text-start"
       >
         <h2
           className="text-[2.8rem] font-bold tracking-[0.1rem]

@@ -56,11 +56,11 @@ export default function ThankYou() {
         >
           You will receive an email confirmation shortly.
         </p>
-        <div className="lg:flex">
+        <div className="xl:flex">
           <div
             className="p-[2.4rem] bg-[#F1F1F1] rounded-t-[0.8rem]
-            lg:rounded-l-[0.8rem] lg:rounded-tr-[0rem]
-            lg:p-[3.2rem]
+            xl:rounded-l-[0.8rem] xl:rounded-tr-[0rem]
+            xl:p-[3.2rem]
             "
           >
             <div className="flex items-center justify-between mb-[1.6rem]">
@@ -75,7 +75,7 @@ export default function ThankYou() {
                   height={64}
                   className="rounded-[0.8rem]"
                 />
-                <div className="lg:mr-[4.3rem]">
+                <div className="xl:mr-[4.3rem]">
                   <h3
                     className="text-[1.5rem] font-bold leading-[1.67]
                             text-[#000]"
@@ -161,8 +161,8 @@ export default function ThankYou() {
               className="flex flex-col gap-[0.8rem]
                 bg-[#000] py-[1.5rem] px-[2.4rem] text-white
                 rounded-b-[0.8rem] 
-                lg:rounded-r-[0.8rem] lg:rounded-bl-[0rem]
-                h-full justify-end lg:p-[3.2rem]
+                xl:rounded-r-[0.8rem] xl:rounded-bl-[0rem]
+                h-full justify-end xl:p-[3.2rem]
                 "
             >
               <span

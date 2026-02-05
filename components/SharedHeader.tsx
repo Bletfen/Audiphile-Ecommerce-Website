@@ -45,17 +45,17 @@ export default function SharedHeader() {
             pt-[1.7rem] pb-[3.2rem]
             px-[2.4rem]
             md:px-[0] max-w-[1110px] mx-auto
-            md:pt-[3.2rem] lg:pt-[3.6rem]
-            lg:pb-[3.6rem]
+            md:pt-[3.2rem] xl:pt-[3.6rem]
+            xl:pb-[3.6rem]
             "
         >
           <div
             className="md:flex items-center
             gap-[4.2rem] transition-all duration-300
-            lg:gap-[19.7rem]"
+            xl:gap-[19.7rem]"
           >
             <svg
-              className="lg:hidden cursor-pointer"
+              className="xl:hidden cursor-pointer"
               width="16"
               height="15"
               xmlns="http://www.w3.org/2000/svg"
@@ -81,7 +81,7 @@ export default function SharedHeader() {
               />
             </svg>
             <div
-              className="hidden lg:flex text-white
+              className="hidden xl:flex text-white
             text-[1.3rem] font-bold leading-[1.92]
             tracking-[0.2rem] gap-[3.4rem]
             "
@@ -146,7 +146,7 @@ export default function SharedHeader() {
         {isOpen && (
           <div
             onClick={() => setIsOpen(false)}
-            className="fixed inset-x-0 bottom-0 lg:hidden
+            className="fixed inset-x-0 bottom-0 xl:hidden
               top-[10.8rem] md:top-[9rem] z-50 bg-black/50
               min-h-screen"
             style={{ WebkitOverflowScrolling: "touch" }}

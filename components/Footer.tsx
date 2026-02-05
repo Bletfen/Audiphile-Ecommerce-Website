@@ -14,20 +14,20 @@ export default function Footer() {
         flex flex-col items-center text-center relative
         md:items-start md:text-left md:px-[4rem]
         md:pt-[6rem] md:pb-[4.6rem]
-        lg:max-w-[111rem] lg:mx-auto
-        lg:px-[0] lg:pb-[4.8rem] lg:pt-[7.5rem]"
+        xl:max-w-[111rem] xl:mx-auto
+        xl:px-[0] xl:pb-[4.8rem] xl:pt-[7.5rem]"
     >
       <div
         className="h-[0.4rem] bg-[#d87d4a] w-[10.4rem]
         absolute top-0"
       ></div>
       <div
-        className="lg:flex lg:justify-between
-        lg:w-full"
+        className="xl:flex xl:justify-between
+        xl:w-full"
       >
         <svg
           className="mb-[4.8rem] md:mb-[3.2rem]
-          lg:mb-[3.6rem]"
+          xl:mb-[3.6rem]"
           width="143"
           height="25"
           xmlns="http://www.w3.org/2000/svg"
@@ -59,10 +59,10 @@ export default function Footer() {
       <div
         className="text-[1.5rem] font-[500] leading-[1.67]
         mb-[4.8rem] md:mb-[8rem]
-        lg:mb-[5.6rem] lg:flex lg:justify-between lg:items-center
-        lg:w-full"
+        xl:mb-[5.6rem] xl:flex xl:justify-between xl:items-center
+        xl:w-full"
       >
-        <p className="opacity-50 lg:max-w-[54rem]">
+        <p className="opacity-50 xl:max-w-[54rem]">
           Audiophile is an all in one stop to fulfill your audio needs. We're a
           small team of music lovers and sound specialists who are devoted to
           helping you get the most out of personal audio. Come and visit our
@@ -70,7 +70,7 @@ export default function Footer() {
         </p>
         <div
           className="gap-[1.6rem] items-center
-          hidden lg:flex lg:self-end"
+          hidden xl:flex xl:self-end"
         >
           <svg
             width="24"
@@ -121,7 +121,7 @@ export default function Footer() {
           </svg>
         </div>
       </div>
-      <span className="hidden lg:flex text-[1.5rem] opacity-50 font-[500] leading-[1.67]">
+      <span className="hidden xl:flex text-[1.5rem] opacity-50 font-[500] leading-[1.67]">
         Copyright 2021. All Rights Reserved
       </span>
 
@@ -129,12 +129,12 @@ export default function Footer() {
         className="flex flex-col gap-[4.8rem] items-center
         md:flex-row md:justify-between md:w-full"
       >
-        <span className="flex lg:hidden text-[1.5rem] opacity-50 font-[500] leading-[1.67]">
+        <span className="flex xl:hidden text-[1.5rem] opacity-50 font-[500] leading-[1.67]">
           Copyright 2021. All Rights Reserved
         </span>
         <div
           className="flex gap-[1.6rem] items-center
-        lg:hidden"
+        xl:hidden"
         >
           <svg
             width="24"

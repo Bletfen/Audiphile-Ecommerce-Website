@@ -12,7 +12,7 @@ export default function Cart() {
       <div
         className="ml-auto mt-[2.4rem] md:mt-[3.2rem] w-full max-w-[37.7rem]
           bg-white rounded-[0.8rem] p-[2.4rem] md:p-[3.2rem]
-          max-h-[70vh] lg:max-h-[80vh] overflow-y-auto overscroll-contain"
+          max-h-[70vh] xl:max-h-[80vh] overflow-y-auto overscroll-contain"
         onClick={(event) => event.stopPropagation()}
       >
         <div className="flex items-center justify-between">

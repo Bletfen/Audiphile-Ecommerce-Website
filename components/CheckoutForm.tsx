@@ -205,12 +205,12 @@ export default function CheckoutForm() {
   return (
     <div
       className="flex flex-col px-[2.4rem] md:px-[3.9rem] 
-        lg:w-[1110px] lg:mx-auto gap-[3.2rem] mt-[3.2rem]
-        lg:flex-row md:gap-[3rem]"
+        xl:w-[1110px] xl:mx-auto gap-[3.2rem] mt-[3.2rem]
+        xl:flex-row md:gap-[3rem]"
     >
       <div
         className="bg-white rounded-[0.8rem] p-[2.4rem]
-        md:w-[73rem] md:p-[3rem] lg:p-[4.8rem] "
+        md:w-[73rem] md:p-[3rem] xl:p-[4.8rem] "
       >
         <h2
           className="text-[3.2rem] font-bold text-[#000]

@@ -40,7 +40,7 @@ export default function Category({ type }: { type?: string }) {
             relative mt-[9.2rem] transition-all duration-300
             w-[32.7rem]
             md:w-[22.3rem] 
-            lg:w-[35rem]"
+            lg:max-w-[35rem] xl:w-[35rem]"
           >
             <Image
               src={item.images[0].desktop}
