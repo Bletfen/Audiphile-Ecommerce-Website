@@ -25,10 +25,10 @@ export default function CategoryInfo({ data }: { data: TProduct[] }) {
               alt={item.name}
               width={220}
               height={240}
-              className="flex md:hidden"
+              className="flex md:hidden rounded-[0.8rem]"
             />
             <div
-              className="hidden md:flex lg:hidden
+              className="hidden md:flex lg:hidden rounded-[0.8rem]
               w-[689px] h-[352px] bg-[#f1f1f1]
               flex items-center justify-center"
             >
@@ -37,7 +37,7 @@ export default function CategoryInfo({ data }: { data: TProduct[] }) {
                 alt={item.name}
                 width={220}
                 height={243}
-                className="hidden md:flex lg:hidden"
+                className="hidden md:flex lg:hidden rounded-[0.8rem]"
               />
             </div>
             <Image
@@ -45,7 +45,7 @@ export default function CategoryInfo({ data }: { data: TProduct[] }) {
               alt={item.name}
               width={540}
               height={560}
-              className="hidden lg:flex"
+              className="hidden lg:flex rounded-[0.8rem]"
             />
           </div>
           <div
