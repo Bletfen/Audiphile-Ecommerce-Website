@@ -1,36 +1,57 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+## Audiophile E-commerce Website
+
+Modern e-commerce storefront for premium audio gear. Built with Next.js App Router, TypeScript, and Tailwind CSS, featuring category navigation, product detail pages, and a cart/checkout flow.
+
+## Features
+
+- App Router pages with category and product routes
+- Product gallery and feature sections
+- Cart management with global state
+- Responsive layout across desktop, tablet, and mobile
+- Static product data and assets stored in-repo
+
+## Tech Stack
+
+- Next.js 16 (App Router)
+- React 19
+- TypeScript
+- Tailwind CSS 4
+- Zustand (cart state)
 
 ## Getting Started
 
-First, run the development server:
+Install dependencies and run the dev server:
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open http://localhost:3000 to view the app.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Scripts
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run dev      # Start local dev server
+npm run build    # Production build
+npm run start    # Start production server
+npm run lint     # Lint the codebase
+```
 
-## Learn More
+## Project Structure
 
-To learn more about Next.js, take a look at the following resources:
+- app/ - App Router pages and layouts
+- components/ - Reusable UI components
+- data/data.json - Product catalog data
+- public/assets/ - Images and static assets
+- store/cartStore.ts - Cart state
+- types/type.d.ts - Shared TypeScript types
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Notes
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- Global styles live in app/globals.css.
+- Fonts are loaded via next/font (Manrope).
 
-## Deploy on Vercel
+## Deployment
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Build the app with `npm run build` and serve it with `npm run start` on your preferred hosting platform.
