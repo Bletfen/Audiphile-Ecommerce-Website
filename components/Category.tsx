@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 import data from "@/data/data.json";
 import Link from "next/link";
@@ -23,7 +24,13 @@ const listOfCategories = [
   },
 ];
 
-export default function Category({ type }: { type?: string }) {
+export default function Category({
+  type,
+  setIsOpen,
+}: {
+  type?: string;
+  setIsOpen?: React.Dispatch<React.SetStateAction<boolean>>;
+}) {
   return (
     <section
       className={`px-[2.4rem] flex
@@ -66,6 +73,7 @@ export default function Category({ type }: { type?: string }) {
                 w-full pt-[8.8rem] pb-[2.2rem]
                 flex flex-col items-center
                 group"
+              onClick={() => setIsOpen && setIsOpen(false)}
             >
               <h2
                 className="text-[1.5rem] font-bold

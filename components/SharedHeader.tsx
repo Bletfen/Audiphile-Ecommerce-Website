@@ -152,7 +152,7 @@ export default function SharedHeader() {
             style={{ WebkitOverflowScrolling: "touch" }}
           >
             <div onClick={(event) => event.stopPropagation()}>
-              <Category type="menu" />
+              <Category type="menu" setIsOpen={setIsOpen} />
             </div>
           </div>
         )}
